@@ -1,0 +1,6 @@
+[submodule "DeepCrawling"]
+	path = DeepCrawling
+	url = https://github.com/breakerspace/DeepCrawling
+[submodule "zbrowse"]
+	path = zbrowse
+	url = https://github.com/breakerspace/zbrowse
