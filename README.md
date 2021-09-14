@@ -1,4 +1,5 @@
 # Sound Methodology for Downloading Webpages
+Sound Methodology for Downloading Webpages [![badge](https://img.shields.io/badge/In%20Proceedings-TMA%202021-blue.svg)](https://tma.ifip.org/2021/)
 
 Downloading webpages is a challenging task. In this work, we establish an effective methodology to download a webpage as completely as possible at a given point in time.
 
@@ -25,13 +26,9 @@ Example commands to obtain data for top-1000 most popular Alexa websites on desk
 
 ```
 $ mkdir deepcrawl_results zbrowse_results tools_results
-$ ./tools_adaptive_runs_AWS_desktop.sh alexa.txt 1 7777 1 1000
+$ ./tools_adaptive_runs_AWS_desktop.sh alexa_top10k.txt 1 7777 1 1000
 ```
 
 Each of the main files, say `tools_adaptive_runs_AWS_desktop.sh` in turn calls `tools_dp_zb_desktop.sh`, to use Crawlium and ZBrowse consecutively, and `data_collection_desktop.sh`, to parse the Crawlium and Zbrowse output files (using the `.py` files) and collect the data in our required format. 
 The file `diif_betn_runs.c` is used by the adaptive strategy to determine that there is no new data in the last 3 consecutive page refreshes.
 
-
-## Citation
-
-To cite this paper, please use the Bibtex [here]().
